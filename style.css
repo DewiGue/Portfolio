@@ -1,0 +1,192 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Background image */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(0.2);
+    background-attachment: fixed;  /* Pour un effet de parallaxe subtil */
+    background-position: center;  /* Centre l'image pour plus d'harmonie */
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff3c3c;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ff3c3c;
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Sections */
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    display: none;
+    background-color: rgba(30, 30, 30, 0.95); /* Légèrement plus opaque pour contraster avec l'image */
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 60, 60, 0.2);
+    margin: 3rem auto;
+    max-width: 1200px; /* Plus large pour occuper l'espace */
+    animation: fadeIn 0.5s ease;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    color: #ff3c3c;
+    margin-bottom: 1rem;
+  }
+  
+  .zone-modifiable {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left: 5px solid #ff3c3c;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #444;
+  }
+  
+  table th {
+    background-color: #2b2b2b;
+  }
+  
+  a {
+    color: #ff6b6b;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .media img {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 4rem;
+    color: #bbb;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Section plus large & aérée */
+section {
+    display: none;
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 60, 60, 0.2);
+    margin: 3rem auto;
+    max-width: 1200px; /* Augmenté */
+    animation: fadeIn 0.5s ease;
+  }
+  

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <header>
+    <div class="profile">
+      <img src="profile.jpg" alt="Photo de profil">
+      <h1>Jean Dupont</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#presentation" data-target="presentation">Présentation</a></li>
+        <li><a href="#bts" data-target="bts">BTS SIO</a></li>
+        <li><a href="#certifications" data-target="certifications">Certifications</a></li>
+        <li><a href="#projets" data-target="projets">Projets</a></li>
+        <li><a href="#tableau" data-target="tableau">Synthèse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="presentation" class="active">
+      <h2>Présentation</h2>
+      <div class="zone-modifiable">
+        <p><strong>Nom :</strong> Jean Dupont</p>
+        <p><strong>Âge :</strong> 22 ans</p>
+        <p><strong>Ville :</strong> Bordeaux</p>
+        <p><strong>Parcours :</strong> Passionné par l’informatique depuis le lycée, je poursuis aujourd’hui un BTS SIO avec une spécialisation SLAM.</p>
+        <p><strong>CV :</strong> <a href="#">Télécharger le CV</a></p>
+      </div>
+    </section>
+
+    <section id="bts">
+      <h2>Présentation du BTS SIO</h2>
+      <p class="zone-modifiable">Le BTS Services Informatiques aux Organisations (SIO) forme à la gestion de projets informatiques, au développement, et à l'administration des systèmes et réseaux.</p>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="zone-modifiable">
+        <li>Certification PIX</li>
+        <li>OpenClassrooms : Développement Web</li>
+      </ul>
+    </section>
+
+    <section id="projets">
+      <h2>Projets Réalisés</h2>
+      <div class="projet zone-modifiable">
+        <h3>Application de gestion de tâches</h3>
+        <p>Développée en Java avec interface Swing, permet de gérer des tâches et les trier par priorité.</p>
+        <div class="media">
+          <img src="screenshot1.png" alt="Screenshot du projet">
+          <a href="https://github.com/jeandupont/task-manager">Voir sur GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tableau">
+      <h2>Synthèse des Réalisations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Projet</th>
+            <th>Compétences Mobilisées</th>
+            <th>Liens & Documents</th>
+          </tr>
+        </thead>
+        <tbody class="zone-modifiable">
+          <tr>
+            <td>Gestion de Tâches</td>
+            <td>POO, Interface Graphique, Java</td>
+            <td><a href="#">Voir le projet</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Jean Dupont</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
