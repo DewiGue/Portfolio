@@ -1,69 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio BTS SIO</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="background"></div>
 
   <header>
     <div class="profile">
-      <img src="images/profile.jpg" alt="Photo de profil">
+      <img src="images/profile.jpg" alt="Photo de profil" />
       <h1>Dewi GUERIN</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="#presentation" data-target="presentation">Présentation</a></li>
-        <li><a href="#bts" data-target="bts">BTS SIO</a></li>
-        <li><a href="#certifications" data-target="certifications">Certifications</a></li>
+        <li><a href="#accueil" data-target="accueil">Accueil / Profil</a></li>
+        <li><a href="#formation" data-target="formation">Formation</a></li>
+        <li><a href="#parcours" data-target="parcours">Parcours</a></li>
         <li><a href="#projets" data-target="projets">Projets</a></li>
         <li><a href="#tableau" data-target="tableau">Synthèse</a></li>
+        <li><a href="#epreuves" data-target="epreuves">Épreuves BTS</a></li>
+        <li><a href="#contact" data-target="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="content">
-    <section id="presentation" class="active">
-      <h2>Présentation</h2>
+
+    <section id="accueil" class="active">
+      <h2>Accueil / Profil</h2>
       <div class="zone-modifiable">
         <p><strong>Nom :</strong> Dewi GUERIN</p>
         <p><strong>Âge :</strong> 20 ans</p>
         <p><strong>Ville :</strong> Rennes</p>
         <p><strong>Parcours :</strong> Passionné par l’informatique depuis le lycée, je poursuis aujourd’hui un BTS SIO avec une spécialisation SLAM.</p>
-        <p><strong>CV :</strong> <a href="documents/CV_Dewi_GUERIN.pdf" download="CV_Dewi_GUERIN.pdf">Télécharger le CV</a></p>
+        <div class="document-card">
+        <div class="doc-icon">📄</div>
+          <div class="doc-content">
+            <h4>CV - Dewi GUERIN</h4>
+            <p>Format PDF – mis à jour en 2025</p>
+            <a href="documents/CV_Dewi_GUERIN.pdf" download>Télécharger</a>
+          </div>
+        </div>
+    </section>
+
+    <section id="formation">
+      <h2>Formation & Certifications</h2>
+      <div class="zone-modifiable">
+        <h3>BTS SIO</h3>
+        <p>Le BTS Services Informatiques aux Organisations (SIO) forme à la gestion de projets informatiques, au développement, et à l'administration des systèmes et réseaux.</p>
+
+        <!--<h3>Certifications</h3>
+        <ul>
+          <li>Certification PIX</li>
+          <li>OpenClassrooms : Développement Web</li>
+        </ul>-->
       </div>
     </section>
 
-    <section id="bts">
-      <h2>Présentation du BTS SIO</h2>
-      <p class="zone-modifiable">Le BTS Services Informatiques aux Organisations (SIO) forme à la gestion de projets informatiques, au développement, et à l'administration des systèmes et réseaux.</p>
-    </section>
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="zone-modifiable">
+        <h3>Stages & Expériences</h3>
+        <p>Retrouvez ici mes expériences professionnelles en entreprise durant le BTS SIO :</p>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul class="zone-modifiable">
-        <li>Certification PIX</li>
-        <li>OpenClassrooms : Développement Web</li>
-      </ul>
-    </section>
+        <div class="stage">
+          <h4>Stage 1 – Développement d'une application web de gestion d'emploi du temps</h4>
+          <p><strong>Entreprise :</strong> CETA</p>
+          <p><strong>Technologies :</strong> HTML, CSS, PHP, SQL, JavaScript & bibliothèque (calendar.js)</p>
+          <p><strong>Durée :</strong> 8 semaines</p>
 
-    <section id="projets">
-      <h2>Projets Réalisés</h2>
-      <div class="projet zone-modifiable">
-        <h3>Wikisouls</h3>
-        <p>Site web développé avec Laravel, le site répertorie les différentes armes des 3 jeux Dark Souls.</p>
-        <div class="media">
-          <img src="images/screenshot1.png" alt="Screenshot du projet">
-          <a href="https://gitlab.com/dgbfra/wikisouls">Voir sur GitHub</a>
+          <div class="document-card">
+            <span class="doc-icon">📄</span>
+            <div class="doc-content">
+              <h4>Rapport de Stage 1</h4>
+              <p>Téléchargez le rapport complet de ce stage.</p>
+              <a href="documents/rapport_stage_CETA_Dewi_GUERIN_SN1.pdf" download>Télécharger</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage" style="margin-top: 2rem;">
+          <h4>Stage 2 – Développement d'une application mobile et correction de bug sur une application mobile</h4>
+          <p><strong>Entreprise :</strong> Feldrise</p>
+          <p><strong>Technologies :</strong> FlutterFlow, Flutter, Firebase & NoSQL</p>
+          <p><strong>Durée :</strong> 7 semaines</p>
+
+          <div class="document-card">
+            <span class="doc-icon">📄</span>
+            <div class="doc-content">
+              <h4>Rapport de Stage 2</h4>
+              <p>Consultez le rapport détaillé de cette mission.</p>
+              <a href="documents/rapport_stage_Feldrise_Dewi_GUERIN_SN2.pdf" download>Télécharger</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      
     </section>
 
+
+<section id="projets">
+  <h2>Projets</h2>
+  <div class="zone-modifiable">
+    <p>Voici une sélection de projets réalisés en autonomie ou dans un cadre scolaire :</p>
+    <div class="document-card">
+      <div class="projet">
+        <h4>Wikisouls</h4>
+        <p>Site Laravel répertoriant les armes de la série Dark Souls.</p>
+        <div class="media">
+          <img src="images/wikisouls.png" alt="Capture Wikisouls" />
+          <a href="https://gitlab.com/dgbfra/wikisouls" target="_blank">Voir sur GitLab</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="document-card">
+      <div class="projet">
+        <h4>Rubis Clicker</h4>
+        <p>Jeu style Coockie Clicker en Javascript dans l'univers de Zelda</p>
+        <div class="media">
+          <img src="images/rubis_clicker.png" alt="Capture Rubis Clicker" />
+          <a href="https://gitlab.com/dgbfra/rubis-clicker" target="_blank">Voir sur GitLab</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="document-card">
+      <div class="projet">
+        <h4>Projet Nasa</h4>
+        <p>Application web en vue.js avec des informations sur notre système solaire.</p>
+        <div class="media">
+          <img src="images/projet_nasa.png" alt="Capture projet Nasa" />
+          <a href="https://gitlab.com/dgbfra/nasa" target="_blank">Voir sur GitLab</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+    <!-- 
     <section id="tableau">
       <h2>Synthèse des Réalisations</h2>
       <table>
@@ -80,13 +159,46 @@
             <td>POO, Interface Graphique, Java</td>
             <td><a href="#">Voir le projet</a></td>
           </tr>
+
         </tbody>
       </table>
+    </section>
+    -->
+
+    <section id="epreuves">
+      <h2>Épreuves BTS (E4 & E5)</h2>
+      <div class="zone-modifiable">
+        <div class="document-card">
+            <span class="doc-icon">📄</span>
+            <div class="doc-content">
+              <h4>Épreuve E4 - Support et mise à disposition de services</h4>
+
+              <a href="documents/E4_Dewi_GUERIN.pdf" download>Télécharger</a>
+            </div>
+        </div>
+
+        <div class="document-card">
+            <span class="doc-icon">📄</span>
+            <div class="doc-content">
+              <h4>Épreuve E5 - Réalisation d’un développement</h4>
+              <a href="documents/E5_Dewi_GUERIN.pdf" download>Télécharger</a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="zone-modifiable">
+        <p>Adresse e-mail : <a href="mailto:dewi.guerin@gmail.com">dewi.guerin@gmail.com</a></p>
+        <p>LinkedIn : <a href="http://www.linkedin.com/in/dewi-guerin-434451290">Lien vers mon profil</a></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Dewi GUERIN </p>
+    <p>&copy; 2025 - Dewi GUERIN</p>
   </footer>
 
   <script src="script.js"></script>

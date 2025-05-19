@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const targetId = link.getAttribute("data-target");
   
-        // Masquer toutes les sections
+
         sections.forEach(section => section.classList.remove("active"));
   
-        // Afficher la section ciblée
+
         const targetSection = document.getElementById(targetId);
         if (targetSection) {
           targetSection.classList.add("active");
