@@ -16,15 +16,24 @@
     </div>
     <nav>
       <ul>
+        <li><a href="#a-propos" data-target="a-propos">À propos</a></li>
         <li><a href="#accueil" data-target="accueil">Accueil / Profil</a></li>
         <li><a href="#formation" data-target="formation">Formation</a></li>
         <li><a href="#parcours" data-target="parcours">Parcours</a></li>
         <li><a href="#projets" data-target="projets">Projets</a></li>
-        <li><a href="#documents" data-target="documents">Documents</a></li>
-        <li><a href="#contact" data-target="contact">Contact</a></li>
+        <li><a href="#competence" data-target="competence">Compétence et Technologies</a></li>
+        <li><a href="#recherche" data-target="recherche">Ce que je recherche</a></li>
+        <li><a href="#contact" data-target="contact">Contact  </a></li>
       </ul>
     </nav>
   </header>
+
+
+
+
+
+
+
 
   <main id="content">
 
@@ -34,7 +43,7 @@
         <p><strong>Nom :</strong> Dewi GUERIN</p>
         <p><strong>Âge :</strong> 20 ans</p>
         <p><strong>Ville :</strong> Rennes</p>
-        <p><strong>Parcours :</strong> Passionné par l’informatique depuis le lycée, je poursuis aujourd’hui un BTS SIO avec une spécialisation SLAM.</p>
+        <p><strong>Parcours :</strong> Passionné par l’informatique depuis le lycée et diplômé d'un BTS SIO SLAM, je poursuis mes études en BAC +3 DevOps FullStack.</p>
         <div class="document-card">
         <div class="doc-icon">📄</div>
           <div class="doc-content">
@@ -46,16 +55,18 @@
     </section>
 
     <section id="formation">
-      <h2>Formation & Certifications</h2>
+      <h2>Formations</h2>
       <div class="zone-modifiable">
-        <h3>BTS SIO</h3>
-        <p>Le BTS Services Informatiques aux Organisations (SIO) forme à la gestion de projets informatiques, au développement, et à l'administration des systèmes et réseaux.</p>
-
-        <!--<h3>Certifications</h3>
-        <ul>
-          <li>Certification PIX</li>
-          <li>OpenClassrooms : Développement Web</li>
-        </ul>-->
+        <div class="formation-card">
+          <h3>BTS SIO SLAM (2023-2025)</h3>
+          <p><strong>Diplômé</strong> - Spécialité Solutions Logicielles et Applications Métiers.<br>
+          Développement d'applications, gestion de projet, bases de données, sécurité, travail en équipe.</p>
+        </div>
+        <div class="formation-card">
+          <h3>Bac Général (2020-2023)</h3>
+          <p><strong>Spécialités :</strong> Mathématiques & Numérique et Sciences Informatiques (NSI)<br>
+          Approfondissement en algorithmique, programmation et logique mathématique.</p>
+        </div>
       </div>
     </section>
 
@@ -64,6 +75,7 @@
       <div class="zone-modifiable">
         <h3>Stages & Expériences</h3>
         <p>Retrouvez ici mes expériences professionnelles en entreprise durant le BTS SIO :</p>
+        <br>
 
         <div class="stage">
           <h4>Stage 1 – Développement d'une application web de gestion d'emploi du temps</h4>
@@ -104,10 +116,14 @@
   <h2>Projets</h2>
   <div class="zone-modifiable">
     <p>Voici une sélection de projets réalisés en autonomie ou dans un cadre scolaire :</p>
-    <div class="document-card">
+    <div class="document-card projet-phare">
       <div class="projet">
+        <div class="projet-badge">Projet phare</div>
         <h4>Wikisouls</h4>
-        <p>Site Laravel répertoriant les armes de la série Dark Souls.</p>
+        <p><strong>Résumé :</strong> Application web développée sous Laravel permettant de répertorier et rechercher les armes de la série Dark Souls. Gestion de base de données, interface utilisateur responsive, et fonctionnalités avancées de filtrage.</p>
+        <div class="projet-tags">
+          <span>Laravel</span><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>Git</span>
+        </div>
         <div class="media">
           <img src="images/wikisouls.png" alt="Capture Wikisouls" />
           <a href="https://gitlab.com/dgbfra/wikisouls" target="_blank">Voir sur GitLab</a>
@@ -118,7 +134,10 @@
     <div class="document-card">
       <div class="projet">
         <h4>Rubis Clicker</h4>
-        <p>Jeu style Coockie Clicker en Javascript dans l'univers de Zelda</p>
+        <p><strong>Résumé :</strong> Jeu web inspiré de Cookie Clicker, développé en JavaScript, dans l’univers de Zelda. Gestion de score, animations, sauvegarde locale et interface ludique.</p>
+        <div class="projet-tags">
+          <span>JavaScript</span><span>HTML/CSS</span><span>UI/UX</span>
+        </div>
         <div class="media">
           <img src="images/rubis_clicker.png" alt="Capture Rubis Clicker" />
           <a href="https://gitlab.com/dgbfra/rubis-clicker" target="_blank">Voir sur GitLab</a>
@@ -129,7 +148,10 @@
     <div class="document-card">
       <div class="projet">
         <h4>Projet Nasa</h4>
-        <p>Application web en vue.js avec des informations sur notre système solaire.</p>
+        <p><strong>Résumé :</strong> Application web réalisée avec Vue.js présentant des informations et images sur le système solaire. Consommation d’API, affichage dynamique et responsive.</p>
+        <div class="projet-tags">
+          <span>Vue.js</span><span>JavaScript</span><span>API</span><span>HTML/CSS</span>
+        </div>
         <div class="media">
           <img src="images/projet_nasa.png" alt="Capture projet Nasa" />
           <a href="https://gitlab.com/dgbfra/nasa" target="_blank">Voir sur GitLab</a>
@@ -142,37 +164,110 @@
 </section>
 
 
-    <section id="documents">
-      <h2>Documents de veille et E5</h2>
-      <div class="zone-modifiable">
-        <div class="document-card">
-            <span class="doc-icon">📄</span>
-            <div class="doc-content">
-              <h4>Veille</h4>
 
-              <a href="documents/veille_numérique_Dewi_GUERIN.pdf" download>Télécharger</a>
-            </div>
+    <section id="competence">
+      <h2>Compétences & Technologies</h2>
+      <div class="zone-modifiable competences-techniques">
+        <p class="competences-intro">Voici un aperçu des principaux langages, frameworks et outils que j'utilise au quotidien, avec pour chacun les domaines d'application et les bibliothèques associées.</p>
+        <div class="competence-grid">
+          <div class="competence-card" data-tech="python">
+            <div class="competence-icon"><img src="images/python.png" alt="Python" /></div>
+            <h3>Python</h3>
+            <p class="competence-desc">Développement de scripts, Réseau de neuronnes</p>
+            <ul>
+              <li><strong>Bibliothèques :</strong> NumPy, Keras</li>
+              <li><strong>Compétences :</strong> Programmation orientée objet</li>
+            </ul>
+          </div>
+          <div class="competence-card" data-tech="javascript">
+            <div class="competence-icon"><img src="images/javascript.png" alt="JavaScript" /></div>
+            <h3>JavaScript</h3>
+            <p class="competence-desc">Applications web dynamiques côté client et serveur.</p>
+            <ul>
+              <li><strong>Frameworks/Bibliothèques :</strong> Vue.js, Node.js, jQuery, API</li>
+            </ul>
+          </div>
+          <div class="competence-card" data-tech="php">
+            <div class="competence-icon"><img src="images/php.png" alt="PHP" /></div>
+            <h3>PHP</h3>
+            <p class="competence-desc">Développement web, sites dynamiques et API.</p>
+            <ul>
+              <li><strong>Framework :</strong> Laravel</li>
+            </ul>
+          </div>
+          <div class="competence-card" data-tech="sql">
+            <div class="competence-icon"><img src="images/database.png" alt="SQL / NoSQL" /></div>
+            <h3>SQL / NoSQL</h3>
+            <p class="competence-desc">Gestion et conception de bases de données relationnelles et NoSQL.</p>
+            <ul>
+              <li><strong>Bases :</strong> MySQL, PostgreSQL, Firebase</li>
+            </ul>
+          </div>
+          <div class="competence-card" data-tech="htmlcss">
+            <div class="competence-icon"><img src="images/htmlcss.png" alt="HTML / CSS" /></div>
+            <h3>HTML / CSS</h3>
+            <p class="competence-desc">Création d'interfaces web modernes et responsives.</p>
+            <ul>
+              <li><strong>Outils :</strong> Flexbox, Grid, animations CSS</li>
+              <li><strong>Framework :</strong> Boostrap</li>
+            </ul>
+          </div>
+          <div class="competence-card" data-tech="autres">
+            <div class="competence-icon"><img src="images/toolbox.png" alt="Autres" /></div>
+            <h3>Autres</h3>
+            <p class="competence-desc">Outils et technologies complémentaires.</p>
+            <ul>
+              <li>Git, Linux, FlutterFlow, Flutter</li>
+            </ul>
+          </div>
+    <!-- Popup pour projets -->
+    <div id="competence-popup" class="competence-popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3 id="popup-title"></h3>
+        <div id="popup-links"></div>
+      </div>
+    </div>
         </div>
-
-        <div class="document-card">
-            <span class="doc-icon">📄</span>
-            <div class="doc-content">
-              <h4>Épreuve E5 - Réalisation d’un développement</h4>
-              <a href="documents/E5_Dewi_GUERIN.pdf" download>Télécharger</a>
-            </div>
-        </div>
-
       </div>
     </section>
+
+      <section id="recherche" class="recherche-section">
+    <h2>Ce que je recherche</h2>
+    <div class=" recherche">
+      <ul>
+        <li><strong>Type de contrat :</strong> Alternance (contrat d’apprentissage ou de professionnalisation)</li>
+        <li><strong>Rythme souhaité :</strong> 2 semaines en entreprise / 1 semaine en formation</li>
+        <li><strong>Poste visé :</strong> Développeur FullStack, DevOps</li>
+        <li><strong>Technologies privilégiées :</strong> Python, JavaScript, PHP</li>
+        <li><strong>Localisation :</strong> Rennes et alentours, ou télétravail partiel</li>
+        <li><strong>Début de contrat :</strong> Dès que possible (année 2025-2026)</li>
+      </ul>
+      <p style="margin-top:1.2rem;">Je suis ouvert à toute proposition sérieuse et motivé à m’investir dans des missions variées et formatrices.</p>
+    </div>
+  </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="zone-modifiable">
-        <p>Adresse e-mail : <a href="mailto:dewi.guerin@gmail.com">dewi.guerin@gmail.com</a></p>
-        <p>LinkedIn : <a href="http://www.linkedin.com/in/dewi-guerin-434451290">Lien vers mon profil</a></p>
-        <p>Numéro téléphone : 07 68 44 26 40</p>
+      <div class="zone-modifiable contact-infos">
+        <p><strong><img src="images/mail.svg" alt="Mail" class="icon-contact"/> E-mail :</strong> <a href="mailto:dewi.guerin@gmail.com">dewi.guerin@gmail.com</a></p>
+        <p><strong><img src="images/linkedin.svg" alt="LinkedIn" class="icon-contact"/> LinkedIn :</strong> <a href="https://www.linkedin.com/in/dewi-guerin-434451290" target="_blank">dewi-guerin-434451290</a></p>
+        <p><strong><img src="images/gitlab.svg" alt="GitLab" class="icon-contact"/> GitLab :</strong> <a href="https://gitlab.com/dgbfra" target="_blank">dgbfra</a></p>
+        <p><strong><img src="images/phone.svg" alt="Téléphone" class="icon-contact"/> Téléphone :</strong> 07 68 44 26 40</p>
       </div>
     </section>
+
+    <section id="a-propos" class="a-propos-section">
+      <h2>À propos</h2>
+      <div class="zone-modifiable a-propos">
+        <p>
+          Passionné par l’informatique depuis le lycée, je suis diplômé d’un BTS SIO SLAM et actuellement en BAC+3 DevOps FullStack.<br><br>
+          <strong>Points forts :</strong> travail en équipe, autonomie, communication, gestion de projet, curiosité et veille technologique, résolution de problèmes.<br><br>
+          Je recherche une alternance pour approfondir mes compétences en développement et DevOps, dans un environnement stimulant et innovant. J’aime relever des défis techniques, apprendre de nouvelles technologies et travailler en équipe sur des projets concrets.
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -180,5 +275,56 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Projets par techno
+    const projetsByTech = {
+      python: [
+        { name: 'Analyse de données (perso)', url: 'https://gitlab.com/dgbfra/python-data' }
+      ],
+      javascript: [
+        { name: 'Rubis Clicker', url: 'https://gitlab.com/dgbfra/rubis-clicker' },
+        { name: 'Projet Nasa', url: 'https://gitlab.com/dgbfra/nasa' }
+      ],
+      php: [
+        { name: 'Wikisouls', url: 'https://gitlab.com/dgbfra/wikisouls' }
+      ],
+      sql: [
+        { name: 'Wikisouls (Laravel + MySQL)', url: 'https://gitlab.com/dgbfra/wikisouls' }
+      ],
+      htmlcss: [
+        { name: 'Portfolio', url: '#' },
+        { name: 'Rubis Clicker', url: 'https://gitlab.com/dgbfra/rubis-clicker' }
+      ],
+      autres: [
+        { name: 'Projet Flutter', url: '#' }
+      ]
+    };
+    // Popup logic
+    document.querySelectorAll('.competence-card').forEach(card => {
+      card.addEventListener('click', function() {
+        const tech = card.getAttribute('data-tech');
+        const links = projetsByTech[tech] || [];
+        document.getElementById('popup-title').textContent = card.querySelector('h3').textContent;
+        const linksDiv = document.getElementById('popup-links');
+        linksDiv.innerHTML = links.length ?
+          `<div class=\"popup-projects\">` +
+            links.map(p => `
+              <div class=\"popup-project-card\">
+                <div class=\"popup-project-title\">${p.name}</div>
+                <a href=\"${p.url}\" target=\"_blank\">Voir le projet</a>
+              </div>
+            `).join('') +
+          `</div>`
+          : '<p style="margin-top:1.5rem;">Aucun projet référencé pour cette technologie.</p>';
+        document.getElementById('competence-popup').style.display = 'flex';
+      });
+    });
+    document.querySelector('.close-popup').onclick = function() {
+      document.getElementById('competence-popup').style.display = 'none';
+    };
+    document.getElementById('competence-popup').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
 </body>
 </html>
