@@ -1,7 +1,3 @@
-/* ---- Ce que je recherche ---- */
-.recherche-section {
-  /* hérite du style section */
-}
 .recherche-section h2 {
   color: #ff3c3c;
   margin-bottom: 1.1rem;
@@ -166,10 +162,6 @@
 .projet-phare {
   border: 2.5px solid #ffb347;
   box-shadow: 0 4px 18px rgba(255,179,71,0.10);
-}
-/* ---- À propos ---- */
-.a-propos-section {
-  /* hérite du style section */
 }
 .a-propos-section h2 {
   color: #ff3c3c;
